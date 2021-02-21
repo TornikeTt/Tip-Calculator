@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <mate name="author" content="TornikeTt"/>
+    <mate name="description" content="Tip Calculator, HTML , CSS(Sass), Javascript" />
+    <title>Tip Calculator</title>
+
+    <link rel="stylesheet" href="style/style.css" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <main>
+        <div class="calculator">
+            <div class="top-side">
+                <h2>Tip Calculator</h2>
+            </div>
+            <form>
+                
+                <fieldset>
+                    <label for="inputBill">How much was your bill?</label> 
+                    <input type="number" placeholder="Bill Amount" id="inputBill" />
+                </fieldset>
+                
+                <fieldset>
+                    <label for="yourService">How was Your service?</label>
+                    <select id="select">
+                        <option disabled  selected> Choose an Option </option>
+                        <option value="30"  >30% - Outstanding</option>
+                        <option value="20"  >20% - Good</option>
+                        <option value="15" >15% - It was ok</option>
+                        <option value="10" >10% - Bad</option>
+                        <option value="5" >5% - Terrible</option>
+                    </select>
+                </fieldset>
+              
+                <fieldset>
+                    <label for="Number-of-people">How many people are sharing the bill?</label>
+                    <input type="number" placeholder="Number of People" id="people"/>
+                </fieldset>
+                
+                <br>
+                <button type="button" onclick="doing()">CALCULTE!</button>
+            </form>
+
+            <div class="outpute">
+                <p id="result"> </p>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
